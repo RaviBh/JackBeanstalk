@@ -5,13 +5,13 @@ phases:
       dotnet: 8.0
   pre_build:
     commands:
-      - dotnet restore JackBeanstalk/JackBeanstalk.csproj
+      - dotnet restore JackBeanstalk.csproj
   build:
     commands:
-      - dotnet build JackBeanstalk/JackBeanstalk.csproj
+      - dotnet build JackBeanstalk.csproj
   post_build:
     commands:
-      - dotnet publish -c Release -o ./app/ JackBeanstalk/JackBeanstalk.csproj
+      - dotnet publish -c Release -o ./app/ JackBeanstalk.csproj
 artifacts:
   files:
     - '**/*'
