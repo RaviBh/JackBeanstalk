@@ -1,0 +1,6 @@
+@JackBeanstalk_HostAddress = http://localhost:5030
+
+GET {{JackBeanstalk_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
